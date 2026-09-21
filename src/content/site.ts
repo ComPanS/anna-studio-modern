@@ -1,3 +1,5 @@
+export const media = (file: string) => `${import.meta.env.BASE_URL}media/${file}`
+
 export const site = {
   name: 'Студия красоты «Анна»',
   shortName: 'АННА',
@@ -16,10 +18,10 @@ export const site = {
 }
 
 export const services = [
-  { title: 'Стрижки', text: 'Модельные, мужские и детские стрижки, укладки и причёски.', price: 'от 700 ₽', image: '/media/work-01.jpg' },
-  { title: 'Окрашивание', text: 'Один тон, тонирование, мелирование, AirTouch, шатуш и балаяж.', price: 'от 2 650 ₽', image: '/media/work-02.jpg' },
-  { title: 'Маникюр и педикюр', text: 'Комбинированный уход, покрытие, укрепление и дизайн ногтей.', price: 'от 1 100 ₽', image: '/media/work-03.jpg' },
-  { title: 'Уход за лицом', text: 'Чистки, пилинги, массаж лица и карбокситерапия.', price: 'от 800 ₽', image: '/media/interior-02.jpg' },
+  { title: 'Стрижки', text: 'Модельные, мужские и детские стрижки, укладки и причёски.', price: 'от 700 ₽', image: media('work-01.jpg') },
+  { title: 'Окрашивание', text: 'Один тон, тонирование, мелирование, AirTouch, шатуш и балаяж.', price: 'от 2 650 ₽', image: media('work-02.jpg') },
+  { title: 'Маникюр и педикюр', text: 'Комбинированный уход, покрытие, укрепление и дизайн ногтей.', price: 'от 1 100 ₽', image: media('work-03.jpg') },
+  { title: 'Уход за лицом', text: 'Чистки, пилинги, массаж лица и карбокситерапия.', price: 'от 800 ₽', image: media('interior-02.jpg') },
 ]
 
 export const prices = [
@@ -31,4 +33,4 @@ export const prices = [
   ['Солярий', '30 ₽ / минута'],
 ]
 
-export const works = ['/media/work-01.jpg', '/media/work-02.jpg', '/media/work-03.jpg']
+export const works = [media('work-01.jpg'), media('work-02.jpg'), media('work-03.jpg')]
