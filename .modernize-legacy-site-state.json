@@ -1,0 +1,10 @@
+{
+  "messageOpeningClassification": "website",
+  "stage": 1,
+  "sourceUrl": "https://miss-anna.ru/",
+  "supportingProfileUrl": "https://yandex.ru/maps/org/place/1754325317/",
+  "mobileStatus": "limited: source content is available but the legacy page is long and dense at narrow widths",
+  "implementedRoutes": ["/"],
+  "deferredRoutes": ["/prices/", "/gallery/", "/reviews/"],
+  "previewPort": 4173
+}

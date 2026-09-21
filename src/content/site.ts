@@ -1,20 +1,34 @@
-export type Service = {
-  slug: string
-  title: string
-  summary: string
-}
-
 export const site = {
-  name: 'Business name',
-  shortName: 'Business',
-  locale: 'en',
-  tagline: 'A faithful, modern redesign concept',
-  description: 'Replace this text only with facts verified on the source website.',
+  name: 'Студия красоты «Анна»',
+  shortName: 'АННА',
+  tagline: 'Красота, к которой удобно возвращаться',
+  description: 'Стрижки, окрашивание, маникюр, педикюр, уход за лицом и телом в одной студии в Лукино-Варино.',
+  promo: '−15% на первое посещение',
+  booking: 'https://widget.sonline.su/ru/services/?placeid=7368',
+  whatsapp: 'https://wa.me/79258937706',
+  telegram: 'https://t.me/studia_anna',
+  map: 'https://yandex.ru/maps/org/place/1754325317/',
   contact: {
-    phone: '',
-    email: '',
-    address: '',
+    phones: ['+7 925 893-77-06', '+7 968 090-25-60'],
+    address: 'Щелковский р-н, п. Свердловский, мкн. Лукино-Варино, ул. Строителей, д. 8',
+    hours: ['Пн–чт 10:00–20:00', 'Пт–сб 10:00–21:00', 'Вс 10:00–20:00'],
   },
 }
 
-export const services: Service[] = []
+export const services = [
+  { title: 'Стрижки', text: 'Модельные, мужские и детские стрижки, укладки и причёски.', price: 'от 700 ₽', image: '/media/work-01.jpg' },
+  { title: 'Окрашивание', text: 'Один тон, тонирование, мелирование, AirTouch, шатуш и балаяж.', price: 'от 2 650 ₽', image: '/media/work-02.jpg' },
+  { title: 'Маникюр и педикюр', text: 'Комбинированный уход, покрытие, укрепление и дизайн ногтей.', price: 'от 1 100 ₽', image: '/media/work-03.jpg' },
+  { title: 'Уход за лицом', text: 'Чистки, пилинги, массаж лица и карбокситерапия.', price: 'от 800 ₽', image: '/media/interior-02.jpg' },
+]
+
+export const prices = [
+  ['Модельная стрижка', 'от 1 600 ₽'],
+  ['Окрашивание в один тон', 'от 2 850 ₽'],
+  ['Маникюр с покрытием', '2 400 ₽'],
+  ['Комбинированный педикюр с покрытием', '2 900 ₽'],
+  ['Ламинирование ресниц', '2 600 ₽'],
+  ['Солярий', '30 ₽ / минута'],
+]
+
+export const works = ['/media/work-01.jpg', '/media/work-02.jpg', '/media/work-03.jpg']
